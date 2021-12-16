@@ -10,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tracer - giving back to the public</title>
 </head>
 
@@ -17,30 +18,105 @@
     <!-- ================ Header ============== -->
     <header class="header">
         <div class="header__container">
-            <!-- <div class="header__box-01">
+            <div class="header__box-01">
                 <h2 class="header__logo">Tracers</h2>
-            </div> -->
+            </div>
             <div class="header__box-02">
                 <ul class="header__ul">
-                    <li class="header__li"><a href="#" class="footer__link header__active"><i class='bx bx-home'></i>
-                            Home</a></li>
-                    <li class="header__li"><a href="#" class="footer__link"><i class='bx bx-info-circle'></i> About
-                            Us</a></li>
-                    <li class="header__li"><a href="#" class="footer__link"><i class='bx bx-user-circle'></i>
-                            Membership</a></li>
-                    <li class="header__li"><a href="#" class="footer__link"><i class='bx bx-map'></i> Location</a></li>
-                    <li class="header__li"><a href="#" class="footer__link"><i class='bx bx-news'></i> News</a></li>
-                    <li class="header__li"><a href="#" class="footer__link"><i class='bx bx-calendar-event'></i>
-                            Events</a></li>
-                    <li class="header__li"><a href="#" class="footer__link"><i class='bx bx-phone-call'></i> Contact
-                            Us</a></li>
-                    <li class="header__li"><a href="#" class="footer__link"><i class='bx bx-coin-stack'></i> Donate</a>
+                    <li class="header__li">
+                        <a href="#" class="header__link header__active">
+                            <i class='bx bx-home'></i>
+                            Home
+                        </a>
                     </li>
-                    <li class="header__li"><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+                    <li class="header__li">
+                        <a href="#" class="header__link">
+                            <i class='bx bx-info-circle'></i>
+                            About Us
+                        </a>
+                        <ul class="header__dropdown">
+                            <li class="header__dropdown-li"><a href="#" class="header__dropdown-link">Board Team</a>
+                            </li>
+                            <li class="header__dropdown-li"><a href="#" class="header__dropdown-link">Who we are</a>
+                            </li>
+                            <li class="header__dropdown-li"><a href="#" class="header__dropdown-link">Vision</a></li>
+                            <li class="header__dropdown-li"><a href="#" class="header__dropdown-link">Mission</a></li>
+                            <li class="header__dropdown-li"><a href="#" class="header__dropdown-link">Approaches</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__li">
+                        <a href="#" class="header__link">
+                            <i class='bx bx-user-circle'></i>
+                            membership
+                        </a>
+                        <ul class="header__dropdown">
+                            <li class="header__dropdown-li"><a href="#" class="header__dropdown-link">Sign-up for
+                                    action</a></li>
+                            <li class="header__dropdown-li"><a href="#" class="header__dropdown-link">Volunteer</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__li"><a href="#" class="header__link"><i class='bx bx-map'></i> Location</a></li>
+                    <li class="header__li"><a href="#" class="header__link"><i class='bx bx-news'></i> News</a></li>
+                    <li class="header__li"><a href="#" class="header__link"><i class='bx bx-calendar-event'></i>
+                            Events</a></li>
+                    <li class="header__li"><a href="#" class="header__link"><i class='bx bx-phone-call'></i> Contact
+                            Us</a></li>
+                    <li class="header__li"><a href="#" class="header__link"><i class='bx bx-coin-stack'></i> Donate</a>
+                    </li>
+                    <li class="header__li">
+                        <i class="bx bx-moon change-theme" id="toggle-icon"></i>
+                        <span class="header__link" id="theme-button"></span>
+
+                        </span>
+                    </li>
                 </ul>
+            </div>
+            <div class="header__box-03">
+                <div id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
+
+    <!-- =========== Menu For Mobile ================ -->
+    <div class="menu" id="menu">
+        <button type="button" class="menu__accordion">Home</button>
+        <button type="button" class="menu__accordion" id="accordion">About Us</button>
+        <div class="menu__content">
+            <ul class="menu__ul">
+                <li class="menu__li"><a href="#" class="menu__link">Board Team</a>
+                </li>
+                <li class="menu__li"><a href="#" class="menu__link">Who we are</a>
+                </li>
+                <li class="menu__li"><a href="#" class="menu__link">Vision</a></li>
+                <li class="menu__li"><a href="#" class="menu__link">Mission</a></li>
+                <li class="menu__li"><a href="#" class="menu__link">Approaches</a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="menu__accordion" id="menu__accordion">Membership</button>
+        <div class="menu__content">
+            <ul class="menu__ul">
+                <li class="menu__li"><a href="#" class="menu__link">Sign-up for action</a>
+                </li>
+                <li class="menu__li"><a href="#" class="menu__link">Volunteer</a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="menu__accordion">Location</button>
+        <button type="button" class="menu__accordion">News</button>
+        <button type="button" class="menu__accordion">Events</button>
+        <button type="button" class="menu__accordion">Contact Us</button>
+        <button type="button" class="menu__accordion">Donate</button>
+        <button type="button" class="menu__accordion">Light Mode</button>
+    </div>
     <main>
         <!-- ============ Hero Center =========== -->
         <div class="hero">
@@ -58,121 +134,228 @@
         <!-- ============= About =========== -->
         <div class="about section">
             <div class="about__wrapper">
-                <div class="about__box" data-aos="fade-down-right" data-aos-delay="100">
+                <div class="about__box U__right" data-aos="fade-down-right" data-aos-delay="100">
                     <div>
-                        <h2 class="about__heading">About Us</h2>
+                        <h2 class="about__heading">What We Are</h2>
+                        <h2 class="about__main">
+                            We are Universal Synergy of African Youths with membership from 54 African countries.
+                        </h2>
                         <p class="about__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur tenetur,
-                            ducimus sit quaerat alias cumque fugiat perspiciatis doloribus minus fuga quae eos dicta
-                            maiores delectus unde. Voluptas, dolore adipisci molestiae mollitia tempore aliquid itaque
-                            illum quas nostrum soluta aspernatur eaque sapiente autem iste facilis nam assumenda a non
-                            nobis
-                            omnis.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro,
+                            fuga beatae quo ducimus in et animi voluptatibus nemo distinctio adipisci ut
+                            nisi at vel temporibus esse sapiente! Veniam quaerat fuga reiciendis dicta animi
+                            laudantium nihil porro labore unde fugit sed eaque illum velit
+                            magnam officiis molestias dignissimos aperiam id quod illo corporis iusto hic,
+                            omnis quia! Repudiandae, quo temporibus.
                         </p>
-                        <button class="about__btn"><a href="#" class="about__link">Read More</a></button>
+                        <button class="about__btn"><a href="#" class="about__link">Read More <i
+                                    class="fa fa-long-arrow-right"></i></a></button>
                     </div>
                 </div>
                 <div class="about__box about__right">
-                    <img src="./assets/about__img.svg" alt="" class="U__primary__image">
-                    <!-- <div class="about__roundBox-01"></div>
-                    <div class="about__roundBox-02"></div>
-                    <div class="about__roundBox-03"></div> -->
+                    <img src="./assets/circle-01.png" alt="circle" class="about__circle-01">
+                    <img src="./assets/circle-01.png" alt="circle" class="about__circle-02">
+                    <img src="./assets/circle-01.png" alt="circle" class="about__circle-03">
                 </div>
             </div>
         </div>
 
+
         <div class="features">
             <div class="features__header section__title">
-                <h2 class="features__heading">Why Tracers?</h2>
+                <h2 class="features__heading">Our Deliverable</h2>
                 <div class="general__line"></div>
                 <p class="features__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, dolores.</p>
             </div>
             <div class="features__wrapper">
                 <div class="features__box" data-aos="zoom-in-up">
-                    <div class="features__iconBox"><i class='bx bx-world'></i></div>
+                    <div class="features__iconBox"><img src="./assets/business-partnership.png" alt="Mentorship"
+                            class="features__img"></div>
                     <h2 class="features__main">
                         Mentorship and Leadership training
                     </h2>
+                    <p class="features__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                        eaque tempora at cupiditate quaerat nobis perferendis consequuntur impedit voluptatibus sit!
+                    </p>
                 </div>
                 <div class="features__box" data-aos="zoom-in-up">
-                    <div class="features__iconBox"><i class='bx bx-webcam'></i></div>
+                    <div class="features__iconBox"><img src="./assets/global-network.png" alt="Summits"
+                            class="features__img"></div>
                     <h2 class="features__main">
                         Annual Summits and Forums
                     </h2>
+                    <p class="features__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                        eaque tempora at cupiditate quaerat nobis perferendis consequuntur impedit voluptatibus sit!
+                    </p>
                 </div>
                 <div class="features__box" data-aos="zoom-in-up">
-                    <div class="features__iconBox"><i class='bx bx-network-chart'></i></div>
+                    <div class="features__iconBox"><img src="./assets/training.png" alt="Workshops"
+                            class="features__img"></div>
                     <h2 class="features__main">
                         Tourism and Workshops
                     </h2>
+                    <p class="features__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                        eaque tempora at cupiditate quaerat nobis perferendis consequuntur impedit voluptatibus sit!
+                    </p>
                 </div>
                 <div class="features__box" data-aos="zoom-in-up" data-aos-delay="50">
-                    <div class="features__iconBox"><i class='bx bxl-internet-explorer'></i></div>
+                    <div class="features__iconBox"><img src="./assets/online-learning.png" alt="Online Schools"
+                            class="features__img"></div>
                     <h2 class="features__main">
                         Online Schools
                     </h2>
+                    <p class="features__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                        eaque tempora at cupiditate quaerat nobis perferendis consequuntur impedit voluptatibus sit!
+                    </p>
                 </div>
             </div>
         </div>
 
-        <!-- ========== Our Patron ================= -->
+        <!-- ========== Our Services ================= -->
         <div class="about">
             <div class="about__wrapper">
                 <div class="about__box" data-aos="fade-down-right" data-aos-delay="100">
-                    <img src="./assets/vision.svg" alt="" class="U__primary__image">
+                    <img src="./assets/services.svg" alt="" class="U__primary__image">
                 </div>
                 <div class="about__box U__right">
-                    <div>
-                        <h2 class="about__heading">Our Service</h2>
+                    <div class="about__textBox wg-left">
+                        <h2 class="about__heading">What We Offer</h2>
+                        <h2 class="about__main">
+                            Turning underdogs to a winning team, <br> we've got to trust the process!
+                        </h2>
                         <p class="about__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur tenetur,
-                            ducimus sit quaerat alias cumque fugiat perspiciatis doloribus minus fuga quae eos dicta
-                            maiores delectus unde. Voluptas, dolore adipisci molestiae mollitia tempore aliquid itaque
-                            illum quas nostrum soluta aspernatur eaque sapiente autem iste facilis nam assumenda a non
-                            nobis
-                            omnis.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro,
+                            fuga beatae quo ducimus in et animi voluptatibus nemo distinctio adipisci ut
+                            nisi at vel temporibus esse sapiente! Veniam quaerat fuga reiciendis dicta animi
+                            laudantium nihil porro labore unde fugit sed eaque illum velit
+                            magnam officiis molestias dignissimos aperiam id quod illo corporis iusto hic,
+                            omnis quia! Repudiandae, quo temporibus.
                         </p>
-                        <button class="about__btn"><a href="#" class="about__link">Read More</a></button>
+                        <button class="about__btn"><a href="#" class="about__link">Read More <i
+                                    class="fa fa-long-arrow-right"></i></a></button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Donation -->
-        <section class="donation">
-            <div class="features__header section__title donation__header">
-                <h2 class="features__heading">Make A Contribution</h2>
+        <section class="patron">
+            <div class="features__header section__title">
+                <h2 class="features__heading">Our Patron</h2>
                 <div class="general__line"></div>
                 <p class="features__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, dolores.</p>
             </div>
-            <div class="donation__card" data-aos="zoom-in-up">
-                <div class="donation__upperBox">
-                    <div class="donation__iconBox"><i class='bx bx-coin-stack'></i></div>
-                    <div class="donation__box">
-                        <h2 class="donation__main">Make A Secure Contribution</h2>
-                        <div class="donation__wrapper">
-                            <button class="donation__boxShift">One time <i
-                                    class='bx bx-radio-circle-marked'></i></button>
-                            <button class="donation__boxShift">Monthly</button>
+            <!-- Swiper -->
+            <div class="swipe mySwipe">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="patron__box">
+                            <div class="patron__roundImage">
+                                <img src="./assets/tim.png" alt="">
+                            </div>
+                            <div class="patron__info">
+                                <h2 class="patron__name">Tim Akano</h2>
+                                <p class="patron__title">C.E.O New Horizons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="patron__box">
+                            <div class="patron__roundImage">
+                                <img src="./assets/tim.png" alt="">
+                            </div>
+                            <div class="patron__info">
+                                <h2 class="patron__name">Tim Akano</h2>
+                                <p class="patron__title">C.E.O New Horizons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="patron__box">
+                            <div class="patron__roundImage">
+                                <img src="./assets/tim.png" alt="">
+                            </div>
+                            <div class="patron__info">
+                                <h2 class="patron__name">Tim Akano</h2>
+                                <p class="patron__title">C.E.O New Horizons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="patron__box">
+                            <div class="patron__roundImage">
+                                <img src="./assets/tim.png" alt="">
+                            </div>
+                            <div class="patron__info">
+                                <h2 class="patron__name">Tim Akano</h2>
+                                <p class="patron__title">C.E.O New Horizons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="patron__box">
+                            <div class="patron__roundImage">
+                                <img src="./assets/tim.png" alt="">
+                            </div>
+                            <div class="patron__info">
+                                <h2 class="patron__name">Tim Akano</h2>
+                                <p class="patron__title">C.E.O New Horizons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="patron__box">
+                            <div class="patron__roundImage">
+                                <img src="./assets/tim.png" alt="">
+                            </div>
+                            <div class="patron__info">
+                                <h2 class="patron__name">Tim Akano</h2>
+                                <p class="patron__title">C.E.O New Horizons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="patron__box">
+                            <div class="patron__roundImage">
+                                <img src="./assets/tim.png" alt="">
+                            </div>
+                            <div class="patron__info">
+                                <h2 class="patron__name">Tim Akano</h2>
+                                <p class="patron__title">C.E.O New Horizons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="patron__box">
+                            <div class="patron__roundImage">
+                                <img src="./assets/tim.png" alt="">
+                            </div>
+                            <div class="patron__info">
+                                <h2 class="patron__name">Tim Akano</h2>
+                                <p class="patron__title">C.E.O New Horizons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="patron__box">
+                            <div class="patron__roundImage">
+                                <img src="./assets/tim.png" alt="">
+                            </div>
+                            <div class="patron__info">
+                                <h2 class="patron__name">Tim Akano</h2>
+                                <p class="patron__title">C.E.O New Horizons</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="donation__downBox">
-                    <div class="donation__grid">
-                        <button class="donation__gridContainer">$50</button>
-                        <button class="donation__gridContainer">$100</button>
-                        <button class="donation__gridContainer" id="memo">$200</button>
-                        <button class="donation__gridContainer">$250</button>
-                        <button class="donation__gridContainer">$500</button>
-                        <button class="donation__gridContainer" id="demo">$1000</button>
-                    </div>
-                    <form action="/index.html" class="donation__form">
-                        <input type="text" name="number" id="number" class="donation__input" disabled="disabled">
-                        <button id="output" class="donation__btn">Donate </button>
-                    </form>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
+
 
         <!-- VISION, MISSION, AND GOALS -->
         <div class="swiper mySwiper section">
@@ -187,10 +370,10 @@
                         <h2 class="swiper__heading">Our Vision</h2>
                         <i class='bx bxs-quote-alt-left'></i>
                         <p class="swiper__info">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Voluptatum rerum blanditiis facere praesentium. Obcaecati error quis amet unde,
-                            eum molestias reprehenderit accusantium totam esse expedita eius odio aliquam molestiae
-                            accusamus!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, accusantium recusandae
+                            ullam obcaecati consequuntur blanditiis? Aperiam quis deleniti totam vel iusto officia
+                            cupiditate laboriosam porro voluptas, rerum dolorum nihil, amet in quam delectus fugit,
+                            sapiente quos vitae excepturi dolor nisi? 
                         </p>
                         <i class='bx bxs-quote-alt-right'></i>
                     </div>
@@ -200,10 +383,10 @@
                         <h2 class="swiper__heading">Our Mision</h2>
                         <i class='bx bxs-quote-alt-left'></i>
                         <p class="swiper__info">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Voluptatum rerum blanditiis facere praesentium. Obcaecati error quis amet unde,
-                            eum molestias reprehenderit accusantium totam esse expedita eius odio aliquam molestiae
-                            accusamus!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, accusantium recusandae
+                            ullam obcaecati consequuntur blanditiis? Aperiam quis deleniti totam vel iusto officia
+                            cupiditate laboriosam porro voluptas, rerum dolorum nihil, amet in quam delectus fugit,
+                            sapiente quos vitae excepturi dolor nisi? 
                         </p>
                         <i class='bx bxs-quote-alt-right'></i>
                     </div>
@@ -213,10 +396,10 @@
                         <h2 class="swiper__heading">Our Core-Value</h2>
                         <i class='bx bxs-quote-alt-left'></i>
                         <p class="swiper__info">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Voluptatum rerum blanditiis facere praesentium. Obcaecati error quis amet unde,
-                            eum molestias reprehenderit accusantium totam esse expedita eius odio aliquam molestiae
-                            accusamus!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, accusantium recusandae
+                            ullam obcaecati consequuntur blanditiis? Aperiam quis deleniti totam vel iusto officia
+                            cupiditate laboriosam porro voluptas, rerum dolorum nihil, amet in quam delectus fugit,
+                            sapiente quos vitae excepturi dolor nisi? 
                         </p>
                         <i class='bx bxs-quote-alt-right'></i>
                     </div>
@@ -226,10 +409,10 @@
                         <h2 class="swiper__heading">Our Goals</h2>
                         <i class='bx bxs-quote-alt-left'></i>
                         <p class="swiper__info">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Voluptatum rerum blanditiis facere praesentium. Obcaecati error quis amet unde,
-                            eum molestias reprehenderit accusantium totam esse expedita eius odio aliquam molestiae
-                            accusamus!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, accusantium recusandae
+                            ullam obcaecati consequuntur blanditiis? Aperiam quis deleniti totam vel iusto officia
+                            cupiditate laboriosam porro voluptas, rerum dolorum nihil, amet in quam delectus fugit,
+                            sapiente quos vitae excepturi dolor nisi?
                         </p>
                         <i class='bx bxs-quote-alt-right'></i>
                     </div>
@@ -237,8 +420,31 @@
             </div>
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
+
+        <!-- Partners -->
+        <section class="partners">
+            <h2 class="partners__heading">Our Collaborators</h2>
+            <div class="partners__wrapper">
+                <p class="partners__info">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam incidunt error unde velit
+                    pariatur.
+                    Quibusdam, tenetur beatae odit cum magni error hic veritatis eveniet
+                    cupiditate culpa, veniam in est alias blanditiis a deserunt"
+                </p>
+                <img src="./assets/open-bracket.png" alt="" class="w-bracket-lg">
+                <img src="./assets/closing-bracket.png" alt="" class="w-bracket-rg">
+            </div>
+            <div class="partners__w-cola">
+                <div class="partners__w-pat"><img src="./assets/partner-01.png" alt=""></div>
+                <div class="partners__w-pat"><img src="./assets/partner-02.png" alt=""></div>
+                <div class="partners__w-pat"><img src="./assets/partner-03.png" alt=""></div>
+                <div class="partners__w-pat"><img src="./assets/partner-04.png" alt=""></div>
+                <div class="partners__w-pat"><img src="./assets/partner-05.png" alt=""></div>
+                <div class="partners__w-pat"><img src="./assets/partner-06.png" alt=""></div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -292,7 +498,8 @@
                 </p>
                 <form action="/index.html" class="footer__form">
                     <div class="footer__inputBox">
-                        <input type="email" name="email" id="email" class="footer__input" required>
+                        <input type="email" name="email" id="email" class="footer__input" required
+                            placeholder="Enter Your Email">
                     </div>
                     <div class="footer__submitBox">
                         <button type="submit" class="footer__btn">subscribe</button>
@@ -306,6 +513,58 @@
             <p class="footer__copy">© Copyright <span class="footer__primary">Tracers</span>. All Rights Reserved</p>
         </div>
     </footer>
+
+    <!-- Chatroom -->
+    <div class="chatRoom" id="chatRoom">
+        <div class="chatRoom__card">
+            <div class="chatRoom__header">
+                <img src="./assets/notification.png" alt="chat" class="chatRoom__notify">
+                <img src="./assets/cross.png" alt="" class="chatRoom__close" id="close">
+                <h3>Hey</h3>
+                <p>Typically we reply within a few minutes.</p>
+            </div>
+
+            <div class="chatRoom__board">
+                <div class="chatRoom__container">
+                    <div class="chatRoom__wrapper">
+                        <div class="chatRoom__boxLeft">
+                            <img src="./assets/chat-user.png" alt="" class="chat__avatar">
+                        </div>
+                        <div class="chatRoom__boxRight">
+                            <div class="chatRoom__user">Tracers</div>
+                            <div class="chatRoom__message">
+                                <p class="chatRoom__text">Hello There!</p>
+                                <p class="chatRoom__text">May you want to know more about Tracers?</p>
+                                <p class="chatRoom__text">
+                                    Reach out to us right here or at
+                                    <a href="mailto:musediqolamilekan@gmail.com">hello@tracers.com</a>
+                                    and we'll get back to you as soon as we can!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatRoom__fileName" id="show">
+                    <p class="chatRoom__name"></p>
+                    <p class="chatRoom__remove" id="chatRoom__remove">x</p>
+                </div>
+            </div>
+            <div class="chatRoom__bottom">
+                <div class="chatRoom__inputBox">
+                    <input type="text" class="chatRoom__input" placeholder="Reply here">
+                </div>
+                <div class="chatRoom__iconBox">
+                    <label for="file" class="chatRoom__label">
+                        <img src="./assets/attached.png" alt="">
+                    </label>
+                    <input type="file" name="file" id="file" class="chatRoom__file">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chatRoom__icon" id="chatRoom__icon">
+        <img src="./assets/chat.png" alt="" class="chatRoom__img">
+    </div>
     <script src="./scripts/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -330,6 +589,26 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwipe", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
             },
         });
     </script>
